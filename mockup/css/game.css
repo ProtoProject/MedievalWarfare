@@ -1,0 +1,25 @@
+ul li {
+    list-style:none;
+}
+
+.game {
+    font-size: 40px;
+    width : 12em;
+    height: 8em;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 1.5em;
+    line-height: 0.9em;
+}
+
+#main-menu {
+    margin: 0 auto;
+}
+
+#main-menu ul li button {
+    font-family: Slackey, sans-serif;
+    font-size: 0.6em;
+    width:10em;
+}
