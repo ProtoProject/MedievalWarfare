@@ -237,3 +237,9 @@ var showBattleResultScreen = function(){
 // 내부 로직 함수
 //=======================================================================
 
+/**
+ * 결과 확인 후 스테이지 선택 화면으로 넘어가기
+ */
+var backToGameStage = function(){
+    showGameStage();
+};
