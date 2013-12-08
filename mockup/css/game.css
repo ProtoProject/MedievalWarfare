@@ -31,12 +31,12 @@ img{border: 0;}
     text-align: center;
 }
 
-#main-menu {
+#title {
     margin: 0 auto;
     background-color: #bbbbbb;
 }
 
-#main-menu ul li button {
+#title ul li button {
     font-family: Slackey, sans-serif;
     font-size: 0.6em;
     width:10em;

@@ -8,11 +8,11 @@
 <body>
     <div class="game">
         <!-- 타이틀 화면 -->
-        <div class="screen show" id="main-menu">
+        <div class="screen" id="title">
             <h2 class="title">MedievalWarfare</h2>
             <div class="menus">
                 <ul>
-                    <li><button>New</button></li>
+                    <li><button onclick="javascript:showScreen('account')">New</button></li>
                     <li><button>Load</button></li>
                     <li><button>Settings</button></li>
                 </ul>
@@ -51,6 +51,22 @@
 
         </div>
     </div>
+
+    <script type="text/javascript" src="js/lib/require.js"></script>
+    <script type="text/javascript">
+    require.config({
+        baseUrl : 'js'
+    });
+
+    require(['lib/jquery'], function(jQuery){
+        showScreen('title');
+    });
+
+    function showScreen(screenId){
+        $('.screen').removeClass('show');
+        $('#'+screenId).addClass('show');
+    }
+    </script>
 </body>
 </html>
 
