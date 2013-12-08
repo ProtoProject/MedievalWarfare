@@ -8,18 +8,27 @@
 <body>
     <div class="game">
         <!-- 타이틀 화면 -->
-        <div class="screen" id="main-menu">
+        <div class="screen show" id="main-menu">
             <h2 class="title">MedievalWarfare</h2>
-            <ul class="menus">
-                <li><button>New</button></li>
-                <li><button>Load</button></li>
-                <li><button>Settings</button></li>
-            </ul>
+            <div class="menus">
+                <ul>
+                    <li><button>New</button></li>
+                    <li><button>Load</button></li>
+                    <li><button>Settings</button></li>
+                </ul>
+            </div>
         </div>
 
         <!-- 플레이어 계정 -->
         <div class="screen" id="account">
-
+            <label for="playerName">플레이어</label>
+            <input id="playerName" type="text"/>
+            <label for="classSelector">클래스</label>
+            <select id="classSelector">
+                <option>클래스명1</option>
+                <option>클래스명2</option>
+                <option>클래스명3</option>
+            </select>
         </div>
 
         <!-- 스테이지 -->
@@ -28,7 +37,7 @@
         </div>
 
         <!-- 스테이지 진입(장비,스킬,유닛선택) -->
-        <div class="screen" id="prepare-battle">
+        <div class="screen" id="prepareBattle">
 
         </div>
 
@@ -38,7 +47,7 @@
         </div>
 
         <!-- 전투결과 -->
-        <div class="screen" id="battle-result">
+        <div class="screen" id="battleResult">
 
         </div>
     </div>

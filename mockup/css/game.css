@@ -1,25 +1,48 @@
-ul li {
-    list-style:none;
-}
+* {margin:0; padding: 0}
+body {font-family: 'Times New Roman', serif;}
+li {list-style: none}
+a {text-decoration: none;}
+img{border: 0;}
 
 .game {
     font-size: 40px;
-    width : 12em;
+}
+
+.screen {
+    float: left;
+    visibility: hidden;
+    width: 12em;
     height: 8em;
+    margin-left: 0em;
     overflow: hidden;
 }
 
+.show {
+    visibility: visible;
+}
+
 .title {
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 0.9em;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+    margin-left: 0.15em;
+    margin-right: 0.15em;
+    text-align: center;
 }
 
 #main-menu {
     margin: 0 auto;
+    background-color: #bbbbbb;
 }
 
 #main-menu ul li button {
     font-family: Slackey, sans-serif;
     font-size: 0.6em;
     width:10em;
+}
+
+.menus ul li{
+    width: 6em;
+    margin: 0 auto;
 }
