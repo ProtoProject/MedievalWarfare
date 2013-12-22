@@ -8,7 +8,7 @@
 <body>
     <div class="game">
         <!-- 타이틀 화면 -->
-        <div class="screen" id="title">
+        <div class="screen center" id="title">
             <h2 class="title">MedievalWarfare</h2>
             <div class="menus">
                 <ul>
@@ -20,15 +20,19 @@
         </div>
 
         <!-- 플레이어 계정 -->
-        <div class="screen" id="account">
-            <label for="playerName">플레이어</label>
-            <input id="playerName" type="text"/>
-            <label for="classSelector">클래스</label>
-            <select id="classSelector">
-                <option>클래스명1</option>
-                <option>클래스명2</option>
-                <option>클래스명3</option>
-            </select>
+        <div class="screen center" id="account">
+                <div class="labelInput">
+                    <label for="playerName">Name :</label>
+                    <input id="playerName" type="text"/>
+                </div>
+                <div class="labelInput">
+                    <label for="classSelector">Class : </label>
+                    <select id="classSelector">
+                        <option>클래스명1</option>
+                        <option>클래스명2</option>
+                        <option>클래스명3</option>
+                    </select>
+                </div>
         </div>
 
         <!-- 스테이지 -->
@@ -63,8 +67,8 @@
     });
 
     function showScreen(screenId){
-        $('.screen').removeClass('show');
-        $('#'+screenId).addClass('show');
+        $('.screen').hide();
+        $('#'+screenId).show();
     }
     </script>
 </body>

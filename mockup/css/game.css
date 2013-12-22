@@ -6,43 +6,52 @@ img{border: 0;}
 
 .game {
     font-size: 40px;
+    width : 480px;
+    height: 320px;
 }
 
 .screen {
     float: left;
-    visibility: hidden;
-    width: 12em;
-    height: 8em;
-    margin-left: 0em;
+    width: 11em;
+    height: 7em;
+    margin: 1em;
     overflow: hidden;
 }
 
-.show {
-    visibility: visible;
-}
-
-.title {
-    font-size: 1.4em;
+.center {
+    font-size: 1em;
     line-height: 0.9em;
-    margin-top: 0.5em;
-    margin-bottom: 0.7em;
-    margin-left: 0.15em;
-    margin-right: 0.15em;
+    padding: 0.5em;
     text-align: center;
-}
-
-#title {
     margin: 0 auto;
     background-color: #bbbbbb;
 }
 
-#title ul li button {
-    font-family: Slackey, sans-serif;
-    font-size: 0.6em;
-    width:10em;
+.menus ul {
+    margin-top: 1em;
 }
 
 .menus ul li{
-    width: 6em;
+    width: 11em;
     margin: 0 auto;
+}
+
+.menus ul li button {
+    font-family: Slackey, sans-serif;
+    font-size: 0.6em;
+    width: 12em;
+}
+
+.labelInput {
+    width:5em;
+    display: block;
+}
+
+.labelInput label {
+    font-size: 0.5em;
+}
+
+h2.title {
+    margin-top: 0.5em;
+    font-size: 1.3em;
 }
