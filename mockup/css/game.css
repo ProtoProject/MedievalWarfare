@@ -27,6 +27,11 @@ img{border: 0;}
     background-color: #bbbbbb;
 }
 
+.twoLabels {
+    height: 2em;
+    margin-top: 2em;
+}
+
 .menus ul {
     margin-top: 1em;
 }
@@ -43,15 +48,44 @@ img{border: 0;}
 }
 
 .labelInput {
-    width:5em;
+    width:6em;
+    height: 1em;
     display: block;
+    margin: 0 auto;
 }
 
 .labelInput label {
     font-size: 0.5em;
+    float: left;
 }
 
 h2.title {
     margin-top: 0.5em;
     font-size: 1.3em;
 }
+
+a.leftArrow {
+    background: url('../img/arrows-min.jpg');
+    background-position: 0px 0px;
+    text-indent: -999999px;
+}
+
+#stage {
+    background: url('../img/worldmap.jpg');
+    margin: 0;
+    width: 12em;
+    height: 8em;
+}
+
+/** icons */
+span{height:1em; width:1em; display:block; position:relative;}
+
+.rightArrow{height:0.9em; width:0.9em; border:0.05em solid #333; border-radius:1em;-webkit-border-radius:1em;-moz-border-radius:1em;}
+
+.rightArrow:before{content:''; height:0; width:0; display:block; border:0.25em transparent solid; border-right-width:0; border-left-color:#333; position:absolute; top:8px; left:14px;}
+
+.rightArrow-on{background:#333; border-radius:1em;-webkit-border-radius:1em;-moz-border-radius:1em;}
+
+.rightArrow-on:before{content:''; height:0; width:0; display:block; border:0.25em transparent solid; border-right-width:0; border-left-color:#fff; position:absolute; top:8px; left:16px;}
+
+

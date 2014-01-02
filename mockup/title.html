@@ -21,9 +21,10 @@
 
         <!-- 플레이어 계정 -->
         <div class="screen center" id="account">
+            <div class="twoLabels">
                 <div class="labelInput">
                     <label for="playerName">Name :</label>
-                    <input id="playerName" type="text"/>
+                    <input id="playerName" type="text" value="Player1"/>
                 </div>
                 <div class="labelInput">
                     <label for="classSelector">Class : </label>
@@ -33,11 +34,13 @@
                         <option>클래스명3</option>
                     </select>
                 </div>
+            </div>
+            <span class="rightArrow" onclick="javascript:showScreen('stage');"></span>
         </div>
 
         <!-- 스테이지 -->
         <div class="screen" id="stage">
-
+            <h3>Stage</h3>
         </div>
 
         <!-- 스테이지 진입(장비,스킬,유닛선택) -->
