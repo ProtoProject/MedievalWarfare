@@ -16,6 +16,7 @@ img{border: 0;}
     height: 7em;
     margin: 1em;
     overflow: hidden;
+    position: relative;
 }
 
 .center {
@@ -64,28 +65,51 @@ h2.title {
     font-size: 1.3em;
 }
 
-a.leftArrow {
-    background: url('../img/arrows-min.jpg');
-    background-position: 0px 0px;
-    text-indent: -999999px;
-}
-
 #stage {
     background: url('../img/worldmap.jpg');
     margin: 0;
-    width: 12em;
-    height: 8em;
+    width: 11em;
+    height: 7em;
 }
 
-/** icons */
-span{height:1em; width:1em; display:block; position:relative;}
+/**************************************************
+*               Button Icons
+***************************************************/
+.navicons {
+  width: 11em;
+  position: absolute;
+  bottom: 0.5em;
+}
 
-.rightArrow{height:0.9em; width:0.9em; border:0.05em solid #333; border-radius:1em;-webkit-border-radius:1em;-moz-border-radius:1em;}
+.icArrows {
+    background: url(../img/arrows.png) 0px 0px;
+    width: 1.05em;
+    height: 1.05em;
+    text-indent: -99999px;
+}
 
-.rightArrow:before{content:''; height:0; width:0; display:block; border:0.25em transparent solid; border-right-width:0; border-left-color:#333; position:absolute; top:8px; left:14px;}
+.left {
+    float: left;
+}
 
-.rightArrow-on{background:#333; border-radius:1em;-webkit-border-radius:1em;-moz-border-radius:1em;}
+.right {
+    float: right;
+}
 
-.rightArrow-on:before{content:''; height:0; width:0; display:block; border:0.25em transparent solid; border-right-width:0; border-left-color:#fff; position:absolute; top:8px; left:16px;}
+.icArrows.down {
+    background-position: 0px 0px;
+}
+.icArrows.left {
+    left:0.01em;
+    background-position: 0px -54px;
+}
+.icArrows.right {
+    right:0.01em;
+    background-position: 0px -108px;
+}
+.icArrows.up {
+    background-position: 0px -162px;
+}
+
 
 

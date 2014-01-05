@@ -35,12 +35,18 @@
                     </select>
                 </div>
             </div>
-            <span class="rightArrow" onclick="javascript:showScreen('stage');"></span>
+            <div class="navicons">
+                <a class="left" onclick="javascript:showScreen('title');"><img class="icArrows left" alt="left"/></a>
+                <a class="right" onclick="javascript:showScreen('stage');"><img class="icArrows right" alt="right"/></a>
+            </div>
         </div>
 
         <!-- 스테이지 -->
-        <div class="screen" id="stage">
-            <h3>Stage</h3>
+        <div class="screen center" id="stage">
+            <h4>Stage</h4>
+            <div class="navicons">
+                <a class="left" onclick="javascript:showScreen('account');"><img class="icArrows left"/></a>
+            </div>
         </div>
 
         <!-- 스테이지 진입(장비,스킬,유닛선택) -->
